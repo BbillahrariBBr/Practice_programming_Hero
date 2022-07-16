@@ -12,7 +12,7 @@
             height: 500px;
             width: 500px;
             border: 5px solid indigo;
-            overflow: hidden;
+            overflow: auto;
         }
 
         .mango-people {
@@ -20,11 +20,28 @@
             width: 500px;
             border: 5px solid indianred;
         }
+
+        .mini-mini {
+            width: 100px;
+            border: 2px solid indianred;
+            overflow: hidden;
+        }
+
+        .short-text {
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
     </style>
 </head>
 
 <body>
     <h1>Ami khusi te Godo godo</h1>
+
+    <div class="mini-mini">
+        <p class="short-text" title="this is mini paragraph. dekha jaak ki hoy.">this is mini paragraph. dekha jaak ki
+            hoy. </p>
+    </div>
     <div class="mega-box">
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, sit quidem tempora optio blanditiis quibusdam
             saepe. Nulla architecto magnam non qui distinctio deserunt unde soluta illum cum perspiciatis rem at
