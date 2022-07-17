@@ -1,2 +1,6 @@
 tiny png --> resize image
 
+font-awesom kit code
+<script src="https://kit.fontawesome.com/f49dbae771.js" crossorigin="anonymous"></script>
+
+
