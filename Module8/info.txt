@@ -1,0 +1,2 @@
+horizontally --> justify contetn
+vertically --> align-items
