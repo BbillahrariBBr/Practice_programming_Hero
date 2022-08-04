@@ -1,4 +1,5 @@
 function lowerCase(name) {
-    console.log(name.toLowerCase());
+    return name.toLowerCase();
 }
-lowerCase("BAKIBILLAH");
+var nameLowerCase = lowerCase("ABDULLAH");
+console.log(nameLowerCase);
