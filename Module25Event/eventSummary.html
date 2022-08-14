@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Summary</title>
+    <!--  know about this tag <summary></summary> -->
+</head>
+
+<body>
+    <p id="change">default input text</p>
+    <input id="input-field" type="text">
+    <button id="update-btn">update</button>
+
+    <h1>Final DOM Event Handler</h1>
+    <h3 id="handeler-status">Default Text</h3>
+    <button onclick="handleOnClick()">Handle event by add onclick function</button>
+
+    <script>
+        function handleOnClick() {
+            const handelerStatus = document.getElementById('handeler-status');
+            handelerStatus.innerHTML = "Handler on click and text change";
+        }
+
+        document.getElementById('update-btn').addEventListener('click', function () {
+            const inputText = document.getElementById('input-field');
+            const changeText = document.getElementById('change');
+            changeText.innerHTML = inputText.value;
+
+        })
+    </script>
+</body>
+
+</html>
