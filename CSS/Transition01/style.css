@@ -5,10 +5,13 @@ button {
     color: white;
     border: none;
     background-color: blue;
-    transition-property: background-color;
-    transition-duration: 1s;
+    transition: background-color 3s ease-in-out 1s,
+        color 4s ease-in,
+        border-radius 3s ease-in-out;
 }
 
 button:hover {
     background-color: green;
+    color: black;
+    border-radius: 50%;
 }
