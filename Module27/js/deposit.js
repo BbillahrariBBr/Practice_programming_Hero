@@ -1,24 +1,15 @@
-function getInputValueById(id) {
-    const inputField = document.getElementById(id);
-    const inputValue = inputField.value;
-    const number = parseFloat(inputValue);
-    inputField.value = '';
-    return number;
 
-}
-
-function getInnerTextValueById(id) {
-    const innerTextField = document.getElementById(id);
-    const innerTextValue = innerTextField.innerText;
-    const number = parseFloat(innerTextValue);
-    return number;
-
-}
 document.getElementById('btn-deposit').addEventListener('click', function () {
-    const deposit = getInputValueById('inp-deposit')
-    console.log(deposit);
-    const totalDeposit = getInnerTextValueById('deposit-total')
-    console.log(totalDeposit);
-    const totalBalance = getInnerTextValueById('total-balance')
-    console.log(totalBalance);
+    const newDeposit = getInputValueById('inp-deposit')
+    //console.log(newDeposit);
+    const previousDeposit = getInnerTextValueById('deposit-total')
+    //console.log(previousDeposit);
+    const depositTotal = newDeposit + previousDeposit;
+    setInnerTextValueById('deposit-total', depositTotal);
+
+    const previousTotalBalance = getInnerTextValueById('total-balance')
+    const newTotalBalance = previousTotalBalance + newDeposit;
+    setInnerTextValueById('total-balance', newTotalBalance);
+
+    //console.log(totalBalance);
 })
