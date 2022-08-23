@@ -28,3 +28,5 @@ const doubleIt = (nmbr) => nmbr * 2;
 
 //single param simplified ver
 const fiveTimes = nmbr => nmbr * 5;
+
+// multiline arrow function

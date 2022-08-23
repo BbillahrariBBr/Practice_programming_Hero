@@ -1,0 +1,10 @@
+const max = Math.max(12, 85, 999, 78);
+const nmbr = [12, 85, 999, 78];
+const largest = Math.max(...nmbr);
+console.log(...nmbr);
+console.log(largest);
+const nmbr2 = [...nmbr];
+nmbr.push(14);
+nmbr2.push(666);
+console.log(nmbr);
+console.log(nmbr2);
