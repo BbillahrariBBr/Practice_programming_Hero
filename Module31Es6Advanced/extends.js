@@ -36,7 +36,7 @@ class Developer {
         console.log(`plz develop the  ${feature}`);
     }
     release(version) {
-        console.log(`plz create quiz for module ${version}`);
+        console.log(`plz release the  ${version}`);
     }
     provideFeedback() {
         console.log(`${this.name} thank u for ur feedback`);
