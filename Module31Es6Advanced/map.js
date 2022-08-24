@@ -32,4 +32,4 @@ purpose
 const makeDouble = numbers.map(doubleIT);
 const makeDouble1 = numbers.map(number => number * 2);
 const makeDouble2 = numbers.map(x => x * 2);
-console.log(makeDouble1);
+console.log(makeDouble2);
