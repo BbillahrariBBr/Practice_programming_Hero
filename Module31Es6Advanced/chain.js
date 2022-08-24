@@ -10,4 +10,4 @@ const data = {
         { id: 2, name: 'dabul', job: 'leader' },
     ]
 }
-console.log(data.data[0].job);
+console.log(data.data);
