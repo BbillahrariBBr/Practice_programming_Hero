@@ -5,5 +5,11 @@ function loadUsers2() {
 }
 
 function displayUsers2(data) {
-    console.log(data);
+    const ul = document.getElementById('users-list')
+    for (user of data) {
+        console.log(user.name);
+        const li = document.createElement('li')
+        li.innerText = user.name;
+        ul.appendChild(li);
+    }
 }
