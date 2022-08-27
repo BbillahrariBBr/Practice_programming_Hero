@@ -16,7 +16,7 @@ function displayData(userComments) {
         <p>comment: ${userComment.body}</p>
         </div>
         `
-        commentDiv.classList.add('post')
+        commentDiv.classList.add('post');
         userCommentContainer.appendChild(commentDiv)
         console.log(userComment);
     }
