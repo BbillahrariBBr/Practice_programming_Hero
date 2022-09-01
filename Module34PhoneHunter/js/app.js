@@ -31,13 +31,29 @@ const displayPhones = (data) => {
             </div>
         `;
         phoneContainer.appendChild(phonDiv);
+
     });
+    //stop loader
+    toggleSpinner(false);
     console.log(data);
 }
 
 document.getElementById('btn-search').addEventListener('click', function () {
+    //start loader;
+    toggleSpinner(true);
     const searchText = document.getElementById('search-field').value;
     loadPhones(searchText);
 
 })
+
+const toggleSpinner = isLoading => {
+    const loaderSection = document.getElementById('loader');
+    if (isLoading) {
+        loaderSection.classList.remove('d-none');
+    }
+    else {
+        loaderSection.classList.add('d-none');
+
+    }
+}
 // loadPhones()
