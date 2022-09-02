@@ -92,6 +92,12 @@ const loadPhoneDetails = async (slug) => {
 }
 
 const displayPhoneDetails = (phnDetails) => {
+    const modalTitle = document.getElementById('phoneDetailModalLabel');
+    modalTitle.innerText = phnDetails.name;
+    const phoneDetails = document.getElementById('phone-details');
+    phoneDetails.innerHTML = `
+    <p>Released Date: ${phnDetails.releaseDate}</p>
+    `;
     console.log(phnDetails);
 }
 // loadPhones()
