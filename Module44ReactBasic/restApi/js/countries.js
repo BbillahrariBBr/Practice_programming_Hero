@@ -13,6 +13,7 @@ const displayCountries = countries => {
 }
 
 const getHtmlCountry = country => {
+    // const {name, flags} = country;
     return `
     <div class="country">
             <h2>${country.name.common}</h2>
@@ -20,5 +21,41 @@ const getHtmlCountry = country => {
         </div>
     `
 }
+//differents way to destructing
+
+// original
+// const getHtmlCountry = country => {
+//     //destructering
+//     //option 1
+//     return `
+//     <div class="country">
+//             <h2>${country.name.common}</h2>
+//             <img src="${country.flags.png}" >
+//         </div>
+//     `
+// }
+//option 1
+// const getHtmlCountry = country => {
+//     //destructering
+//     //option 1
+//     const { name, flags } = country;
+//     return `
+//     <div class="country">
+//             <h2>${name.common}</h2>
+//             <img src="${flags.png}" >
+//         </div>
+//     `
+// }
+
+//option 2
+// const getHtmlCountry = ({ name, flags }) => {
+//     // const {name, flags} = country;
+//     return `
+//     <div class="country">
+//             <h2>${name.common}</h2>
+//             <img src="${flags.png}" >
+//         </div>
+//     `
+// }
 
 loadCountries();
