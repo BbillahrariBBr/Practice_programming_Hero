@@ -44,3 +44,11 @@
   padding: 20px;
   border-radius: 20px;
 }
+
+.person {
+  border: 2px solid red;
+  background-color: #61dafb;
+  margin: 5px;
+  padding: 20px;
+  border-radius: 20px;
+}
