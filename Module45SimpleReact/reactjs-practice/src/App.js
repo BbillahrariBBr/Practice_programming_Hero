@@ -11,13 +11,14 @@ function App() {
   ]
   return (
     <div className="App">
-      {/* {
+      {
         persons.map(person => {
-          return <Person name={person.name} profession={person.profession}></Person>;
+          // return <Person name={person.name} profession={person.profession}></Person>;
+          return console.log(person);
         })
       }
-      <Counter></Counter> */}
-      <ExternalUser></ExternalUser>
+      <Counter></Counter>
+      {/* <ExternalUser></ExternalUser> */}
     </div>
   );
 }
