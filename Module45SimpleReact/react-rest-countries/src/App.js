@@ -5,7 +5,7 @@ import { useEffect, useState } from 'react';
 function App() {
   return (
     <div className="App">
-      <h2>Rest Countries</h2>
+      <h2 className='text-3xl font-bold'>Rest Countries</h2>
       <Countries></Countries>
     </div>
   );
@@ -32,7 +32,7 @@ function Countries() {
 function Country(props) {
   return (
     <div className='country'>
-      <h2>{props.name}</h2>
+      <h2 className='text-xl font-semibold text-blue-500'>{props.name}</h2>
       <img src={props.image} alt="" />
       <p>population: {props.population}</p>
     </div>
