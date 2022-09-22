@@ -20,31 +20,57 @@
 <body>
 
     <!-- navbar starts Here -->
-    <div class="navbar bg-base-100">
+    <div class="navbar bg-slate-800 py-4 px-4">
         <div class="flex-1">
-            <a class="btn btn-ghost normal-case text-xl">daisyUI</a>
+            <img src="./images/logo.png" class="w-16" alt="">
+            <span class="text-3xl text-white font-semibold">PIXEL STORE</span>
+            <!-- <a class="btn btn-ghost normal-case text-xl ">daisyUI</a> -->
         </div>
         <div class="flex-none gap-2">
             <!-- navigation menu is here -->
-            <div class="border-2 w-10 ">
+            <div class="text-2xl  text-white">
+                <ul class="hidden lg:flex">
+                    <li class="mr-10">
+                        <span><i class="fa-solid fa-house"></i></span>
+                        <span>Home</span>
+                    </li>
+                    <li class="mr-10">
+                        <span><i class="fa-solid fa-heart"></i></span>
+                        <span>Wishlist</span>
+                    </li>
+                    <li class="mr-10">
+                        <span><i class="fa-solid fa-trash"></i></span>
+                        <span>Recycle Bin</span>
+                    </li>
+                    <li class="mr-10 relative">
+                        <span class="absolute top-[-15px] right-[-45px] text-xs">
+                            <div class="badge badge-secondary">+99</div>
+                        </span>
+                        <span><i class="fa-solid fa-cart-shopping"></i></span>
+
+                    </li>
+
+
+                </ul>
 
             </div>
-            <div class="dropdown dropdown-end">
+            <div class="dropdown dropdown-end block lg:hidden">
                 <label tabindex="0" class="btn btn-ghost btn-circle avatar">
-                    <div class="w-10 rounded-full">
-                        <img src="https://placeimg.com/80/80/people" />
-                    </div>
+                    <i class="fa-solid fa-bars"></i>
                 </label>
                 <ul tabindex="0"
                     class="mt-3 p-2 shadow menu menu-compact dropdown-content bg-base-100 rounded-box w-52">
                     <li>
-                        <a class="justify-between">
-                            Profile
-                            <span class="badge">New</span>
+                        <a class="">
+                            <span><i class="fa-solid fa-house"></i></span><span>Home</span>
                         </a>
                     </li>
-                    <li><a>Settings</a></li>
-                    <li><a>Logout</a></li>
+                    <li><a><span><i class="fa-solid fa-heart"></i></span>
+                            <span>Wishlist</span></a></li>
+                    <li><a><span><i class="fa-solid fa-trash"></i></span>
+                            <span>Recycle Bin</span></a></li>
+                    <li><a><span><i class="fa-solid fa-cart-shopping"></i></span>
+                            <span>Cart</span></a></li>
                 </ul>
             </div>
         </div>
