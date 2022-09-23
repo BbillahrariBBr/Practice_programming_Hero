@@ -1,7 +1,7 @@
 import React from 'react';
 import { useEffect } from 'react';
 import { useState } from 'react';
-import Cosmetic from '../../Cosmetic/Cosmetic';
+import Cosmetic from '../Cosmetic/Cosmetic';
 // import Shoes from '../../Shoes/Shoes';
 // import { add } from '../../utilities/calculate';
 // import add from '../../utilities/calculate';
@@ -48,7 +48,7 @@ const Cosmetics = () => {
             <h1>Welcome to my Cosmetics store</h1>
             {
                 cosmetics.map(cosmetic => <Cosmetic
-                    cosmetic={cosmetic} key={cosmetic.id}></Cosmetic>)
+                    cosmetic={cosmetic} key={cosmetic._id}></Cosmetic>)
             }
             {/* <p>total: {total}</p>
             <Shoes></Shoes> */}
