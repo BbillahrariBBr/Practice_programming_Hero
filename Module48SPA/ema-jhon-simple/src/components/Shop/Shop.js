@@ -8,33 +8,42 @@ const Shop = () => {
     const [products, setProducts] = useState([]);
     const [cart, setCart] = useState([])
     useEffect(() => {
-        console.log('products load before fetch');
+        // console.log('products load before fetch');
         fetch('products.json')
             .then(res => res.json())
-            .then(data => {
-                setProducts(data);
-                console.log('product loaded');
-            })
+            .then(data => setProducts(data))
     }, []);
 
     useEffect(() => {
-        console.log('localstorage first line');
         const storedCart = getStoredCart();
-        console.log(storedCart);
-        const saveCart = []
+        const savedCart = []
         for (const id in storedCart) {
-            // console.log(id);
             const addedProduct = products.find(product => product.id === id);
             if (addedProduct) {
                 const quantity = storedCart[id];
                 addedProduct.quantity = quantity;
-                saveCart.push(addedProduct);
+                savedCart.push(addedProduct);
             }
-
         }
-        setCart(saveCart);
-        // console.log('local storage finished');
+        setCart(savedCart);
     }, [products])
+
+    // useEffect(() => {
+    //     console.log('localstorage first line');
+    //     const storedCart = getStoredCart();
+    //     console.log(storedCart);
+    //     const saveCart = []
+    //     for (const id in storedCart) {
+    //         const addedProduct = products.find(product => product.id === id);
+    //         if (addedProduct) {
+    //             const quantity = storedCart[id];
+    //             addedProduct.quantity = quantity;
+    //             saveCart.push(addedProduct);
+    //         }
+
+    //     }
+    //     setCart(saveCart);
+    // }, [products])
 
     const handleClick = (product) => {
         // console.log(product);
