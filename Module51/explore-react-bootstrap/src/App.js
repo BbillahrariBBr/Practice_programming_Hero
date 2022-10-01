@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+
 import './App.css';
 import { Button, Spinner } from 'react-bootstrap';
 import GridCard from './components/GridCard/GridCard';
