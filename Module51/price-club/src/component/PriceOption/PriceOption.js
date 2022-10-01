@@ -1,7 +1,9 @@
 import React from 'react';
-import { CheckCircleIcon } from '@heroicons/react/24/solid'
+import Feature from '../../Feature/Feature';
+
 
 const PriceOption = ({ option }) => {
+    const { features } = option;
     return (
         <div className='bg-indigo-300 m-3 rounded-md p-6'>
             <div>
@@ -10,11 +12,14 @@ const PriceOption = ({ option }) => {
                 </h3>
                 <p className='text-3xl my-4'>{option.name}</p>
             </div>
-            <div className='flex items-center'>
-                <CheckCircleIcon className="h-4 w-4 text-blue-500" />
-                <p className='ml-2'>Awesome Feature</p>
+            {
+                features.map((feature, idx) => <Feature
+                    key={idx}
+                    feature={feature}
+                ></Feature>)
+            }
+            <button className='bg-green-400 mt-4 w-full rounded-md py-2 font-bold text-white'>Buy Now</button>
 
-            </div>
 
         </div>
     );
