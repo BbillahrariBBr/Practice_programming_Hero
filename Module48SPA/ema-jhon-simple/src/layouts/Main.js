@@ -1,4 +1,5 @@
 import React from 'react';
+import { Outlet } from 'react-router-dom';
 import Header from '../components/Header/Header';
 import Shop from '../components/Shop/Shop';
 
@@ -6,7 +7,8 @@ const Main = () => {
     return (
         <div>
             <Header></Header>
-            <Shop></Shop>
+            <Outlet></Outlet>
+            {/* <Shop></Shop> */}
 
         </div>
     );
