@@ -1,0 +1,18 @@
+.review-item {
+    display: flex;
+}
+
+.review-item img {
+
+    /* height: 91px; */
+    width: 91px;
+}
+
+
+.review-details-container {
+    display: flex;
+}
+
+.review-container {}
+
+.delete-container {}
