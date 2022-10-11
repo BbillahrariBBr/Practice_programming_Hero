@@ -9,4 +9,9 @@ basic router setup
 7. set children routes
 8. set link on the header component 
 
+context api
+1. declare a context using createContextApi
+2. set provider
+3. use context
+
 */
