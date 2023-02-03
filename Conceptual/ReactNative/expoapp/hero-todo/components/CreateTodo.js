@@ -2,7 +2,8 @@ import { View, KeyboardAvoidingView, Platform, StyleSheet, TextInput, TouchableO
 import React from 'react'
 
 export default function CreateTodo(props) {
-    const { todoContent, setTodoContent } = props;
+    const { todoContent, setTodoContent, handleAddTodo } = props;
+
     return (
         <View>
             <KeyboardAvoidingView
@@ -12,10 +13,10 @@ export default function CreateTodo(props) {
                 <TextInput
                     style={styles.textInput}
                     placeholder="Write Here..."
-                    value={todoContent},
-                onChangeText={(text) => setTodoContent(text)}
+                    value={todoContent}
+                    onChangeText={(text) => setTodoContent(text)}
                 />
-                <TouchableOpacity>
+                <TouchableOpacity onPress={handleAddTodo}>
                     <View style={styles.btn}>
                         <Text style={styles.addBtn}> ADD </Text>
                     </View>
