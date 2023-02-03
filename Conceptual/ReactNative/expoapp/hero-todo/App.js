@@ -1,8 +1,11 @@
 import { StatusBar } from 'expo-status-bar';
+import { useState } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import CreateTodo from './components/CreateTodo';
 import Todo from './components/Todo';
 
 export default function App() {
+  const [todoContent, setTodoContent] = useState("");
   return (
     <View style={styles.container}>
       <View style={styles.mainApp}>
@@ -13,6 +16,7 @@ export default function App() {
           <Todo />
         </View>
       </View>
+      <CreateTodo todoContent={todoContent} setTodoContent={setTodoContent} />
       <StatusBar style="auto" />
     </View>
   );

@@ -8,7 +8,7 @@ export default function Todo() {
                 <View style={styles.order}>
                     <Text style={styles.textColor}>#1</Text>
                 </View>
-                <Text>Task One</Text>
+                <Text style={styles.mainText}>Task One</Text>
             </View>
             <TouchableOpacity style={styles.btn}>
                 <Text style={styles.textColor}>Remove</Text>
@@ -55,5 +55,8 @@ const styles = StyleSheet.create({
     },
     textColor: {
         color: '#fff',
+    },
+    mainText: {
+        maxWidth: "88%",
     }
 })
